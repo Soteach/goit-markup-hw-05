@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>homework-4</title>
+    <title>homework-5</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
 <a class="logo-link" href="">Web<span class="part-logo">Studio</span></a>
     <nav class="nav-list" >
     <ul class="site-nav">
-        <li class="list nav-item"><a class="nav-link link current" href="index.html">Студия</a></li>
+        <li class="list nav-item current"><a class="nav-link link" href="index.html">Студия</a></li>
         <li class="list nav-item"><a class="nav-link link" href="portfolio.html">Портфолио</a></li>
         <li class="list nav-item"><a class="nav-link link" href="">Контакты</a></li>
     </ul>
@@ -47,7 +47,7 @@
         <section class="hero">
             <div class="container hero-container">
         <h1 class="hero-header">Эффективные решения для вашего бизнеса</h1>
-        <button  class="hero-button pointer" type="button" >Заказать услугу</button>
+        <button  class="hero-button pointer" type="button" data-modal-open>Заказать услугу</button>
         </div>
     </section>
         <section class="specific">
@@ -78,20 +78,23 @@
         <div class="container">
         <h2 class="section-header">Чем мы занимаемся</h2>
             <ul class="work-list" >
-            <li class="list">
+            <li class="list our-work-card">
                 <a href="">
                 <img src="images/box1.jpg" alt="людина пише програму" width="370" height="294">
+                <p class="work-bottom-text">Десктопные приложения</p>
                 </a>
             </li>
-            <li class="list">
+            <li class="list our-work-card">
                 <a href="">
                 <img src="images/box2.jpg" alt="перевірка роботи програми на мобільному пристрої" width="370" height="294">
-                </a>
+                <p class="work-bottom-text">Мобильные приложения</p>
+            </a>
             </li>
-            <li class="list">
+            <li class="list our-work-card">
                 <a href="">
                 <img src="images/box3.jpg" alt="вибір кольору на планшеті" width="370" height="294">
-                </a>
+                <p class="work-bottom-text">Дизайнерские решения</p>
+            </a>
             </li>
         </ul>
     </div>
@@ -368,17 +371,16 @@
             </div>
 </div>
 </footer>
-
-<!-- MODAL-WINDOW -->
-
-<button  class="hero-button pointer" type="button" data-model-open >Заказать услугу</button>
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-        
+        <button class="modal-close-button" type="button" data-modal-close>
+            <svg class="modal-close-icon" width="18" height="18" >
+                <use href="./images/symbol-defs.svg#icon-close-black">
+                </use>
+            </svg>
+        </button>
     </div>
 </div>
-<button data-model-close>Закрити</button>
-
 <script src="./js/modal.js"></script>
 </body>
 </html>

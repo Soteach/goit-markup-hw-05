@@ -11,3 +11,15 @@ Oleo Script 400
     --main-font-color:#757575;
     --header-color:#212121;
     --advanced-color:#ffff00;
+    --modal-window-background:#AFB1B8;
+
+    transform:scale(100%);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 100ms;
+
+
+
+    end meaning
+
+    transform: scale(110%);
